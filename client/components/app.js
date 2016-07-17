@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from './header';
 
 export default () => {
   return (
-    <div>Codebin!</div>
+    <div>
+      <Header />
+    </div>
   );
 };
