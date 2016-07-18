@@ -1,4 +1,5 @@
-import Mongo from 'meteor/mongo';
+// must load up collections both on client and server main.js files
+import { Mongo } from 'meteor/mongo';
 
 Meteor.methods({
   'bins.insert': function() {
@@ -6,7 +7,7 @@ Meteor.methods({
       createdAt: new Date(),
       content: '',
       sharedWith: [],
-      userId: this.userId
+      ownerId: this.userId
     });
   }
 });
