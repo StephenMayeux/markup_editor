@@ -12,7 +12,7 @@ Meteor.startup(() => {
 
     if (!user) { return; }
 
-    const email = users.emails[0].address;
+    const email = user.emails[0].address;
 
     return Bins.find({
       sharedWith: { $elemMatch: { $eq: email } }
