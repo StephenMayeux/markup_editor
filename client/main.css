@@ -10,5 +10,12 @@
 .bin-share {
   position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.bin-share .input-group {
+  width: 30%;
 }
