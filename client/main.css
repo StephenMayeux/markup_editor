@@ -19,3 +19,7 @@
 .bin-share .input-group {
   width: 30%;
 }
+
+.bin-share > div {
+  margin: 0 10px;
+}
